@@ -1,2 +1,10 @@
 # Portfolio-Choices-with-Orthogonal-Bandit-Learning
+## Introduction
 Portfolio choice problems have had a profound influence on the finance industry. Modern portfolio theory and analysis build upon the seminal work of Markowitz. However, it has been proved to be highly sensitive to the expected rate of return and the covariance matrix which are hard to estimate, leading to an incomprehensible result in investment practices. Therefore, motivated by this noticeably poor performance in out-of-sample settings, we turn to the multi-armed bandit method which is a potent tool for designing on-line sequential decision strategies. 
+However, standard multi-armed bandits assume the rewards of each arm are drawn from i.i.d (independent and identically distributed) random variables, whereas in practice financial asset returns are generally correlated. Moreover, standard bandit learning attempts to choose the best arm for action, while in portfolio choice problems investors tend to select multiple assets for investment.
+To grapple with those challenges in applying conventional bandit algorithms to portfolio choice problems, we use an orthogonal bandit learning algorithm to effectively make portfolio choices. 
+In particular, we take advantage of linear shrinkage, nonlinear shrinkage and multi-factor model for a better covariance matrix estimation, choose LSTM and prophet methods to predict the expected rate of return, adopt 3 different search policies: Softmax, Annealing -Greedy and the UCB1.
+Further, we take advantage of the principal component decomposition to orthogonalize correlated assets based on the parallel back-testing, choose Sharpe Ratio as the risk adjusted reward function in the upper conﬁdence bound, and combine the generated passive and active portfolio weights to construct a low-risk portfolio.
+Moreover, to validate the proposed strategy, we evaluate the performance from cumulative wealth, compared with EW portfolio, Minimum-Variance portfolio, Naïve Bandit Portfolio (no correlation among arms).
+
+More details could be found in the report.
