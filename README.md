@@ -7,4 +7,4 @@ In particular, we take advantage of linear shrinkage, nonlinear shrinkage and mu
 Further, we take advantage of the principal component decomposition to orthogonalize correlated assets based on the parallel back-testing, choose Sharpe Ratio as the risk adjusted reward function in the upper conﬁdence bound, and combine the generated passive and active portfolio weights to construct a low-risk portfolio.
 Moreover, to validate the proposed strategy, we evaluate the performance from cumulative wealth, compared with EW portfolio, Minimum-Variance portfolio, Naïve Bandit Portfolio (no correlation among arms).
 
-More details could be found in the report.
+More details could be found in the report. The code is also attached at the Appendix part of the report.
